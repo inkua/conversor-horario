@@ -35,7 +35,7 @@ body {
 footer {
     margin: 0 auto;
     width: 80%;
-
+    margin-right: 150px;
 }
 
 .footer {
@@ -44,23 +44,27 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.footer ul li{
-    color: antiquewhite;
+.footer ul li {
     display: inline;
+}
+
+.footer ul li{
     padding-right: 60px;
-    padding-left: 60px;
+    padding-left: 60px;   
     border-right: 3px solid antiquewhite;
 }
 
-.footer ul li:nth-child(3) {
-    border: none;
+.footer ul li a{
+    color: antiquewhite;
 }
 
-.footer ul li:nth-child(1) {
-    padding-left: 0px;
+.footer ul li a{
     
 }
 
+.footer ul li:nth-child(3) {
+    border: 0px;
+}
 @media screen and (max-width:700px) {
     
     .mainTitle h1{
