@@ -1,68 +1,74 @@
+@font-face {
+    font-family: "rubik";
+    src: url("./assets/fuentes/Rubik-VariableFont_wght.ttf");
+    font-weight: 300 400 500 600 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Colores */
+    --clr-negro: #070417;
+    --clr-gris-oscuro: #555555;
+    --clr-gris-claro: #d9d9d9;
+    --clr-blanco: #fafaff;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    --clr-celeste: #74acdf;
+    --clr-azul: #0038a8;
+    --clr-rojo: #ff6d90;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Tamaños para textos */
+    --txt-2xl: 3.25rem; /* 52px */
+    --txt-xl: 2rem; /* 32px */
+    --txt-lg: 1.75rem; /* 28px */
+    --txt-md: 1.375rem; /* 22px */
+    --txt-base: 1.125rem; /* 18px */
+    --txt-sm: 0.875rem; /* 14px */
+
+    /* Pesos de fuentes */
+    --wgh-bold: 700;
+    --wgh-semiBold: 600;
+    --wgh-medium: 500;
+    --wgh-regular: 400;
+    --wgh-ligth: 300;
+}
+
+html {
+    font-family: rubik;
+    background-color: var(--clr-blanco);
+    color: var(--clr-negro);
+}
+
+ul {
+    list-style-type: none;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-weight: var(--wgh-bold);
+    font-size: var(--txt-lg);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+    font-weight: var(--wgh-medium);
+    font-size: var(--txt-md);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Media querys */
+@media (min-width: 45rem) {
+    h1 {
+        font-size: var(--txt-2xl);
+    }
+
+    h2 {
+        font-size: var(--txt-xl);
+    }
 }
