@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aplicación web para convertir zonas horarias"/>
+        <meta name="author" content="Inkua Team"/>
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Conversor horario</title>
+    </head>
+
+    <body>
+        
+
+        <div class="main">
+            <div class="titulo">
+            <h1>Conversor</h1>
+            <a href="./pages/crear-reunion.html">Crear reunión</a>
+            </div>
+            <div class="seleccionarPais">
+                <label for="seleccionPais">Selecciona los países</label>
+                <select  name="paisOrigen" id="paisSeleccionado" required>
+                    <option value="Argentina">Argentina </option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brazil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Perú</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+
+                <div class="paisOrigenResultado">Pais origen</div>
+                <div class="paisDestinoResultado">Pais destino</div>
+            </div>
+
+            <div class="seleccionarFecha">
+            <label for="horaLocal">Ingresa la fecha:</label>
+            <br>
+
+            <input type="datetime-local" required min="0" max="23">
+            <br>
+            </div>
+
+            <div class="fechaConvertida">
+            <label for="horaResultadoLabel">Resultado:</label>
+            <br>
+            <div class="horaResultado"></div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <div class="footer">
+                <p>Diseñado y desarrollado por InkuA Team.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="./js/moment.js"></script>
+        <script src="./js/moment-timezone.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
