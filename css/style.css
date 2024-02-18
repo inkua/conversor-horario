@@ -10,6 +10,73 @@
     box-sizing: border-box;
 }
 
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    margin-top: 30px;
+}
+
+.titulo a {
+    color: var(--clr-celeste);
+    float: right;
+    margin-top: -30px;
+}
+
+.seleccionarPais {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.paisOrigenResultado, .paisDestinoResultado {
+    text-align: left;
+    font-size: 15px;
+}
+
+.seleccionarFecha  {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.seleccionarFecha input[type="datetime-local"] {
+    margin-top: 10px;
+    background-color: #bbb7b7;
+    border: 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+.fechaConvertida {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.horaResultado {
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: var(--clr-celeste);
+    border: 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--clr-celeste);
+}
+
 :root {
     /* Colores */
     --clr-negro: #070417;
