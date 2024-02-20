@@ -1,7 +1,7 @@
 window.addEventListener("load", programa);
 
 function mostrarHoraConvertida() {
-    const hora = (document.getElementById('hora').value);
+    const hora = (document.getElementById('hora{local').value);
     const paisOrigen = document.getElementById('paisOrigen').value;
     const paisDestino = document.getElementById('paisDestino').value;
     const titulo = document.getElementById('title').value;

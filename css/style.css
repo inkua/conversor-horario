@@ -139,3 +139,30 @@ h2 {
         font-size: var(--txt-xl);
     }
 }
+
+/* Hasta aca el style del index.html */
+
+/* Aca comienza el css de crear-reunion.html */
+
+.formularioReunion {
+    display: flex;
+    margin: 0 auto;
+    font-weight:  var(--wgh-bold);
+    width: 40%;
+}
+
+.informacionReunion {
+   width: 50%;
+}
+
+.informacionReunion  input, .informacionReunion  textarea{
+    margin-bottom: 20px;
+}
+
+.datosReunion {
+   width: 50%;
+}
+.formularioReunion input[type="text"], .formularioReunion textarea {
+    width: 200px;
+}
+
