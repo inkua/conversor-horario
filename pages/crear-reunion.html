@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aplicación web para convertir zonas horarias"/>
+        <meta name="author" content="Inkua Team"/>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css">
+        <link rel="stylesheet" href="../css/crearReunion.css">
+        <title>Crear reunión</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="logo"></img>
+                </a>
+
+                <a href="#"><h1 class="nav-first-title">Crear Reunión</h1></a>
+
+                <a href="../index.html">
+                    <span class="nav-second-title">conversor</span>
+                </a>
+            </nav>
+        </header>
+        
+        <main >
+            <form class="form">
+                <div class="firstBlock">
+                    <label for="title">Titulo</label>
+                    <input type="text" id="title" placeholder="titulo reunión" class="inputForm">
+
+                    <label for="description">Información</label>
+                    <textarea type="text" id="description" placeholder="descripción de reunión"></textarea>
+
+                    <label for="link">Enlace de reunión</label>
+                    <input type="text" id="link" placeholder="enlace de reunión" class="inputForm">
+                    
+                </div>
+                <div class="secondBlock">
+                    <label for="date">Fecha y hora</label>
+                    <input type="text" id="date" placeholder="fecha y hora" class="inputForm" required>
+
+                    <label for="origin">Ciudad origen</label>
+                    <input type="search" id="origin" placeholder="seleccione ciudad" class="inputForm" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" required>
+
+                    <label for="destiny">Ciudades a incluir</label>
+                    <div class="input_wrapper">
+                        <input type="search" id="destiny" placeholder="seleccione ciudad" class="inputForm inputForm-cities" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" required>
+                        <button type="button" class="addBtn">+</button>
+                    </div>
+
+                    <div class="citiesBox"></div>
+                </div>
+            </form>
+        </main>
+
+
+        <!-- Scripts -->
+        <script src="../js/moment.js"></script>
+        <script src="../js/moment-timezone.js"></script>
+        <script src="../js/main.js"></script>
+
+        <!-- select -->
+        <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+        <script src="../js/select.js"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    margin-top: 30px;
+}
+
+.titulo a {
+    color: var(--clr-celeste);
+    float: right;
+    margin-top: -30px;
+}
+
+.seleccionarPais {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.paisOrigenResultado, .paisDestinoResultado {
+    text-align: left;
+    font-size: 15px;
+}
+
+.seleccionarFecha  {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.seleccionarFecha input[type="datetime-local"] {
+    margin-top: 10px;
+    background-color: #bbb7b7;
+    border: 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+.fechaConvertida {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.horaResultado {
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: var(--clr-celeste);
+    border: 0px;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+}
+
+footer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--clr-celeste);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: var(--wgh-bold);
+    font-size: var(--txt-lg);
+}
+
+h2 {
+    font-weight: var(--wgh-medium);
+    font-size: var(--txt-md);
+}
+
+/* Media querys */
+@media (min-width: 45rem) {
+    h1 {
+        font-size: var(--txt-2xl);
+    }
+
+    h2 {
+        font-size: var(--txt-xl);
+    }
+}
+
+/* Hasta aca el style del index.html */
+
+/* Aca comienza el css de crear-reunion.html */
+
+.formularioReunion {
+    display: flex;
+    margin: 0 auto;
+    font-weight:  var(--wgh-bold);
+    width: 40%;
+}
+
+.informacionReunion {
+   width: 50%;
+}
+
+.informacionReunion  input, .informacionReunion  textarea{
+    margin-bottom: 20px;
+}
+
+.datosReunion {
+   width: 50%;
+}
+.formularioReunion input[type="text"], .formularioReunion textarea {
+    width: 200px;
+}
+
