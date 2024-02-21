@@ -1,0 +1,142 @@
+main{
+    padding: 10px;
+    height: 500px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+form .firstBlock{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form .secondBlock{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: block;
+}
+.inputForm{
+    height: 30px;
+    width: 290px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+    border: 0.1rem solid rgb(177, 177, 177);
+    padding: 6px 9px;
+}
+textarea{
+    width: 290px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+    border: 0.1rem solid rgb(177, 177, 177);
+    padding: 6px 9px;
+}
+.autoComplete_wrapper .inputForm{
+    height: 30px;
+    width: 290px;
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+    border: 0.1rem solid rgb(177, 177, 177);
+    padding: 6px 9px;
+}
+
+
+.input_wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 290px;
+    gap: 5px;
+}
+
+.input_wrapper .inputForm-cities{
+    width: 100%;
+}
+.input_wrapper .autoComplete_wrapper{
+    grid-column: 1/5;
+}
+.input_wrapper .addBtn{
+    grid-column: 5/6;
+    background-color: rgb(176, 225, 103);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+}
+.input_wrapper .addBtn:hover{
+    transition-duration: 300ms;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.input_wrapper .addBtn:disabled:hover{
+    transform: none;
+    cursor: unset;
+}
+.input_wrapper .addBtn:disabled{
+    background-color: rgb(179, 179, 179);
+}
+
+@media (min-width: 601px) {
+    form{
+        flex-direction: row;
+        gap:5px;
+        justify-content: space-evenly;
+    }
+    form .firstBlock{
+        width: 100%;
+    }
+    form .secondBlock{
+        width: 100%;
+    }
+    label{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .inputForm{
+        width: 280px;
+        margin-bottom: 25px;
+    }
+    textarea{
+        width: 280px;
+    }
+
+    .autoComplete_wrapper .inputForm{
+        width: 280px;
+        margin-bottom: 25px;
+    }
+    .input_wrapper .autoComplete_wrapper .inputForm-cities{
+       width: 100%;
+    }
+
+}
+@media (min-width: 900px) {
+    .inputForm{
+        width: 350px;
+        font-size: 1.1rem;
+    }
+    
+    textarea{
+        width: 350px;
+        height: 130px;
+        font-size: 1.1rem;
+    }
+    .autoComplete_wrapper .inputForm{
+        width: 350px;
+        font-size: 1.1rem;
+    }
+
+    .input_wrapper{
+        width: 350px;
+    }
+
+}

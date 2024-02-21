@@ -75,10 +75,13 @@ nav{
 
 
 @media (min-width: 601px) {
-
-
+    
+    
     nav{
         margin: 20px 40px;
+    }
+    .logo{
+        width: 80px;
     }
     .nav-first-title{
         font-size: 1.6rem;
