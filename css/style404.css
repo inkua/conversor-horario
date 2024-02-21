@@ -26,9 +26,9 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--clr-celeste);
     margin: 0 auto;
-    color: var(--clr-celeste);
+    color: var(--clr-blanco);
 }
 
 a {
@@ -43,6 +43,24 @@ a {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.mainBlock{
+    max-width: 50%;
+    background-color: var(--clr-blanco);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px var(--clr-gris-oscuro);
+    
+
+}
+.errorMessage{
+    color:#991b1b;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 10px;
+    
 
 .logoMain {
     margin-top: 10px;
@@ -61,6 +79,7 @@ a {
 .descriptionError a {
     font-size: 30px;
 }
+
 
 footer {
     margin: 0 auto;
@@ -91,6 +110,7 @@ footer {
 .footer ul li:nth-child(3) {
     border: 0px;
 }
+
 @media screen and (max-width:700px) {
     
     .mainTitle h1{
