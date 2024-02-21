@@ -70,6 +70,7 @@ body {
     border: none;
     border-radius: 8px;
     width: 100%;
+    background-color: var(--clr-blanco);
 }
 
 .inputs input {
@@ -77,8 +78,13 @@ body {
 }
 
 .inputs select {
+    height: 2rem;
     padding-block: 0.25rem;
     text-align: center;
+}
+
+.inputs .inputs__selected_cities:empty {
+    display: none;
 }
 
 .inputs .inputs__selected_cities {
@@ -95,6 +101,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.inputs .inputs__selected_cities li img {
+    cursor: pointer;
 }
 
 #idDate {
