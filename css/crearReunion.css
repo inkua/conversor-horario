@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
 body {
     max-width: 60rem;
 }
@@ -37,6 +41,7 @@ body {
     padding-inline: 1.25rem;
     align-items: start;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .inputs section {
@@ -93,7 +98,6 @@ body {
     gap: 0.45rem;
     background-color: var(--clr-blanco);
     padding: 0.75rem;
-    list-style-type: none;
     border-radius: 8px;
 }
 
@@ -101,10 +105,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--clr-azul);
 }
 
 .inputs .inputs__selected_cities li img {
     cursor: pointer;
+}
+
+/* Resultado */
+.output {
+    background-color: var(--clr-celeste);
+    padding: 1.25rem;
+    color: var(--clr-blanco);
+    box-shadow: 0 2px 5px 1px var(--clr-shadows);
+}
+
+.output h2 {
+    font-size: var(--txt-xl);
+}
+
+.output p {
+    font-size: var(--txt-md);
 }
 
 #idDate {

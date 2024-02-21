@@ -38,11 +38,18 @@ function programa() {
     // se agrega a la lista de ciudades a incluir y se actualiza la interfaz
     selectorDeDestino.addEventListener('change', () => {
         if (selectorDeDestino.value) {
-            const ciudadNueva = ciudades.find(
+            const seEncuentraEnLaLista = ciudadesAIncluir.find(
                 (ciudad) => ciudad.codigo === selectorDeDestino.value
             );
-            ciudadesAIncluir.push(ciudadNueva);
-            actualizarInterfazDeCiudadesIncluidas();
+
+            if (!seEncuentraEnLaLista) {
+                const ciudadNueva = ciudades.find(
+                    (ciudad) => ciudad.codigo === selectorDeDestino.value
+                );
+
+                ciudadesAIncluir.push(ciudadNueva);
+                actualizarInterfazDeCiudadesIncluidas();
+            }
         }
     });
 

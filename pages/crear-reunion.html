@@ -29,49 +29,60 @@
             </nav>
         </header>
 
-        <!-- Inputs -->
-        <form class="inputs">
-            <section>
-                <div>
-                    <label for="idTitle">Título:</label>
-                    <input id="idTitle" type="text" />
-                </div>
-                <div>
-                    <label for="idDescription">Descripción:</label>
-                    <textarea id="idDescription" rows="6"></textarea>
-                </div>
-                <div>
-                    <label for="idLink">Link a la reunión:</label>
-                    <input id="idLink" type="text" />
-                </div>
-            </section>
-            <section>
-                <div>
-                    <label for="idDate">Fecha y hora:</label>
-                    <input id="idDate" type="datetime-local" />
-                </div>
-                <div>
-                    <label for="idSelectOriginCity">Ciudad origen:</label>
-                    <select id="idSelectOriginCity">
-                        <option value="">Seleccione una ciudad</option>
-                        <!-- 
+        <main>
+            <!-- Inputs -->
+            <form class="inputs">
+                <section>
+                    <div>
+                        <label for="idTitle">Título:</label>
+                        <input id="idTitle" type="text" />
+                    </div>
+                    <div>
+                        <label for="idDescription">Descripción:</label>
+                        <textarea id="idDescription" rows="6"></textarea>
+                    </div>
+                    <div>
+                        <label for="idLink">Link a la reunión:</label>
+                        <input id="idLink" type="text" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="idDate">Fecha y hora:</label>
+                        <input id="idDate" type="datetime-local" />
+                    </div>
+                    <div>
+                        <label for="idSelectOriginCity">Ciudad origen:</label>
+                        <select id="idSelectOriginCity">
+                            <option value="">Seleccione una ciudad</option>
+                            <!-- 
                         Ejemplos:
                         <option value="America/Bogota">Bogotá</option>
                         <option value="America/Buenos_Aires">Buenos Aires</option>
                         <option value="America/Montevideo">Montevideo</option> 
-                        -->
-                    </select>
-                </div>
-                <div>
-                    <label for="idSelectDestCity">Ciudades a incluir:</label>
-                    <select id="idSelectDestCity">
-                        <option value="">Seleccione las ciudades</option>
-                    </select>
-                    <ul class="inputs__selected_cities" id="idSelectedCities"></ul>
-                </div>
-            </section>
-        </form>
+                        --></select>
+                    </div>
+                    <div>
+                        <label for="idSelectDestCity">Ciudades a incluir:</label>
+                        <select id="idSelectDestCity">
+                            <option value="">Seleccione las ciudades</option>
+                        </select>
+                        <ul class="inputs__selected_cities" id="idSelectedCities"></ul>
+                    </div>
+                </section>
+            </form>
 
+            <!-- Resultado -->
+            <section class="output">
+                <h2>Este es el título,</h2>
+                <p>y esta es la descripción</p>
+                <ul>
+                    <li>Bogotá: Martes 15/02 - 23:00</li>
+                    <li>Martes 15/02 - 23:00</li>
+                    <li>Martes 15/02 - 23:00</li>
+                </ul>
+            </section>
+        </main>
         <!-- Scripts -->
         <script src="../js/moment.js"></script>
         <script src="../js/moment-timezone.js"></script>
