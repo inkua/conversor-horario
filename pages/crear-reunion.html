@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Aplicación web para convertir zonas horarias"/>
-        <meta name="author" content="Inkua Team"/>
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css">
-        <link rel="stylesheet" href="../css/crearReunion.css">
+        <meta name="description" content="Aplicación web para convertir zonas horarias" />
+        <meta name="author" content="Inkua Team" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css"
+        />
+        <link rel="stylesheet" href="../css/crearReunion.css" />
         <title>Crear reunión</title>
     </head>
 
     <body>
-        <header>
+        <!-- Header -->
+        <header class="header">
+            <a href="/index.html">
+                <img
+                    src="../assets/img/logo.png"
+                    alt="Logo de la aplicacion, la tierra junto con un reloj de color blanco y azul."
+                />
+            </a>
+            <h1>Crear reunión</h1>
             <nav>
-                <a href="../index.html">
-                    <img class="logo" src="../assets/img/logo.png" alt="logo"></img>
-                </a>
-
-                <a href="#"><h1 class="nav-first-title">Crear Reunión</h1></a>
-
-                <a href="../index.html">
-                    <span class="nav-second-title">conversor</span>
-                </a>
+                <a href="/index.html">Conversor</a>
             </nav>
         </header>
-        
-        <main >
-            <form class="form">
-                <div class="firstBlock">
-                    <label for="title">Titulo</label>
-                    <input type="text" id="title" placeholder="titulo reunión" class="inputForm">
 
-                    <label for="description">Información</label>
-                    <textarea type="text" id="description" placeholder="descripción de reunión"></textarea>
-
-                    <label for="link">Enlace de reunión</label>
-                    <input type="text" id="link" placeholder="enlace de reunión" class="inputForm">
-                    
+        <!-- Inputs -->
+        <form class="inputs">
+            <section>
+                <div>
+                    <label for="idTitle">Título:</label>
+                    <input id="idTitle" type="text" />
                 </div>
-                <div class="secondBlock">
-                    <label for="date">Fecha y hora</label>
-                    <input type="text" id="date" placeholder="fecha y hora" class="inputForm" required>
-
-                    <label for="origin">Ciudad origen</label>
-                    <input type="search" id="origin" placeholder="seleccione ciudad" class="inputForm" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" required>
-
-                    <label for="destiny">Ciudades a incluir</label>
-                    <div class="input_wrapper">
-                        <input type="search" id="destiny" placeholder="seleccione ciudad" class="inputForm inputForm-cities" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off" required>
-                        <button type="button" class="addBtn">+</button>
-                    </div>
-
-                    <div class="citiesBox"></div>
+                <div>
+                    <label for="idDescription">Descripción:</label>
+                    <textarea id="idDescription" rows="6"></textarea>
                 </div>
-            </form>
-        </main>
-
+                <div>
+                    <label for="idLink">Link a la reunión:</label>
+                    <input id="idLink" type="text" />
+                </div>
+            </section>
+            <section>
+                <div>
+                    <label for="idDate">Fecha y hora:</label>
+                    <input id="idDate" type="datetime-local" />
+                </div>
+                <div>
+                    <label for="idSelectOriginCity">Ciudad origen:</label>
+                    <select id="idSelectOriginCity">
+                        <option value="">Seleccione una ciudad</option>
+                        <!-- 
+                        Ejemplos:
+                        <option value="America/Bogota">Bogotá</option>
+                        <option value="America/Buenos_Aires">Buenos Aires</option>
+                        <option value="America/Montevideo">Montevideo</option> 
+                        -->
+                    </select>
+                </div>
+                <div>
+                    <label for="idSelectDestCity">Ciudades a incluir:</label>
+                    <select id="idSelectDestCity">
+                        <option value="">Seleccione una ciudad</option>
+                    </select>
+                    <ul class="inputs__selected_cities" id="idSelectedCities">
+                        <li>Bogotá <img src="../assets/img/cross.png" alt="Icono con forma de una cruz roja." /></li>
+                        <li>
+                            Buenos Aires <img src="../assets/img/cross.png" alt="Icono con forma de una cruz roja." />
+                        </li>
+                        <li>
+                            Montevideo <img src="../assets/img/cross.png" alt="Icono con forma de una cruz roja." />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </form>
 
         <!-- Scripts -->
         <script src="../js/moment.js"></script>
         <script src="../js/moment-timezone.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/crear-reunion.js"></script>
 
         <!-- select -->
         <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
