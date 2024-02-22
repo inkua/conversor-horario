@@ -1,12 +1,14 @@
 @font-face {
-    font-family: "rubik";
-    src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
+    font-family: 'rubik';
+    src: url('../assets/fonts/Rubik-VariableFont_wght.ttf');
     font-weight: 300 400 500 600 700;
 }
 
 :root {
     /* Colores */
     --clr-negro: #070417;
+    --clr-negro-difuminado: #070417b4;
+    --clr-shadows: #07041714;
     --clr-gris-oscuro: #555555;
     --clr-gris-claro: #d9d9d9;
     --clr-blanco: #fafaff;
@@ -14,11 +16,11 @@
     --clr-celeste: #74acdf;
     --clr-azul: #0038a8;
     --clr-rojo: #ff6d90;
-    
-    --clr-uno: #E6E2DB;
-    --clr-dos: #FBF9F1;
-    --clr-tres: #ABD8DA;
-    --clr-cuatro: #93C8D0;
+
+    --clr-uno: #e6e2db;
+    --clr-dos: #fbf9f1;
+    --clr-tres: #abd8da;
+    --clr-cuatro: #93c8d0;
 
     /* Tamaños para textos */
     --txt-2xl: 3.25rem; /* 52px */
@@ -48,49 +50,43 @@ html {
     color: var(--clr-negro);
 }
 
-
-body{
+body {
     max-width: 1280px;
     margin: 0 auto;
 }
 
 /* header style start */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 20px;
 }
-.logo{
+.logo {
     aspect-ratio: 1/1;
     width: 60px;
 }
-.nav-first-title{
+.nav-first-title {
     font-size: 1rem;
 }
-.nav-second-title{
+.nav-second-title {
     font-size: 0.7rem;
     font-weight: 300;
 }
 
-
 @media (min-width: 601px) {
-    
-    
-    nav{
+    nav {
         margin: 20px 40px;
     }
-    .logo{
+    .logo {
         width: 80px;
     }
-    .nav-first-title{
+    .nav-first-title {
         font-size: 1.6rem;
     }
-    .nav-second-title{
+    .nav-second-title {
         font-size: 1rem;
         font-weight: 300;
     }
-
 }
 /* header style finish */
-
