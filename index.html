@@ -22,49 +22,32 @@
                 <a href="./pages/crear-reunion.html">
                     <span class="nav-second-title">Crear reunion</span>
                 </a>
-                
             </nav>
         </header>
         
 
         <main class="main">
-            <div class="titulo">
-            <h1>Conversor</h1>
-            <a href="./pages/crear-reunion.html">Crear reunión</a>
-            </div>
-            <div class="seleccionarPais">
-                <label for="seleccionPais">Selecciona los países</label>
-                <select  name="paisOrigen" id="paisSeleccionado" required>
-                    <option value="Argentina">Argentina </option>
-                    <option value="Bolivia">Bolivia</option>
-                    <option value="Brazil">Brasil</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Paraguay">Paraguay</option>
-                    <option value="Peru">Perú</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Venezuela">Venezuela</option>
-                </select>
-
-                <div class="paisOrigenResultado">Pais origen</div>
-                <div class="paisDestinoResultado">Pais destino</div>
-            </div>
-
-            <div class="seleccionarFecha">
-            <label for="">Ingresa la fecha:</label>
-            <br>
-
-            <input id="horaLocal" name="horaLocal" type="datetime-local" required min="0" max="23">
-            <br>
-            </div>
-
-            <div class="fechaConvertida">
-            <label for="horaResultadoLabel">Resultado:</label>
-            <br>
-            <div class="horaResultado"></div>
-            </div>
             
+            <div class="formularioCiudad">
+                <label for="">Ciudad de origen</label>
+                <input id="ciudadOrigen"  type="search" list="listaCiudades" required placeholder="🔎 Ciudad origen"> <br>
+
+                <label for="">Hora</label> 
+                <input id="horaLocal" type="time" required> <br>
+
+                <label for="">Ciudad de destino</label> 
+                <input id="ciudadDestino" type="search" list="listaCiudades" required placeholder="🔎 Ciudad destino"> 
+            
+                <div class="botonConvertir">
+                    <button onclick="mostrarHoraConvertida()">Convertir</button>
+                </div>
+
+                <div id="resultado" class="resultado">
+                  
+                </div>
+                
+            </div>
+
         </main>
 
         <footer>
@@ -77,5 +60,13 @@
         <script src="./js/moment.js"></script>
         <script src="./js/moment-timezone.js"></script>
         <script src="./js/main.js"></script>
+
+        <!--Lista de ciudades-->
+        <datalist id="listaCiudades">
+            <option value="Buenos Aires">        
+            <option value="Santiago de chile">          
+            <option value="Bogota">          
+            <option value="Caracas">
+        </datalist>
     </body>
 </html>
