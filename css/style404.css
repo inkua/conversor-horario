@@ -98,12 +98,99 @@ nav{
     font-weight: var(--wgh-ligth);  
     text-decoration: underline;
 }
+.logo{
+    height: 100px;
+    width: 100px;
+   
+}
 
 .contentError img{
     margin-top: 10%;
     margin-bottom: 10%;
+    max-width: 75%;
+    max-height: 75%
 }
+
+
+        
 .contentError p{
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        margin: 0 auto;
+        color: var(--clr-negro);
+        
+    }
+    
+    .main {
+        max-width: 80%;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color:  var(--clr-blanco);
+    
+        border-radius: 25px;
+        height: 400px;
+        width: 60%;
+        
+        margin-top: 2%;
+        margin-right: 20%;
+        margin-bottom: 2%;
+        margin-left: 20%;
+      
+    }
+
+
+  
+    .noEncontrada{
+        color:var(--clr-negro);
+        font-size: var(--txt-base);
+        font-weight: var(--wgh-semiBold);
+        
+    }
+    nav{
+        margin: 10px 10px 10px;
+    }
+    .regresoButton{
+        display: inline-block;
+        border: none;
+        text-align: center;
+    
+        cursor: pointer;
+        background-color: #007AFF;
+        border-radius: 6px;
+        height: 60px;
+        width: 60%;
+        color:var(--clr-blanco);
+        font-size: 20px;
+    }
+    
+    .messageError{
+        color:var(--clr-gris-oscuro)
+    }
+    
+    .nav-first-title{
+        color: var(--clr-blanco);   
+        font-size: var(--txt-base);
+        font-weight: var(--wgh-bold);
+
+        
+    }
+    .nav-second-title{
+        color: var(--clr-blanco); 
+        font-size: var(--txt-sm);
+        font-weight: var(--wgh-ligth);  
+        text-decoration: underline;
+
+    }
+    .logo{
+        height: 75px;
+        width: 75px;
+       
+    }
+    
+   
+ 
 }
