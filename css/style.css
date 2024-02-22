@@ -1,73 +1,93 @@
 
+:root {
+    /* Colores */
+    --clr-negro: #070417;
+    --clr-gris-oscuro: #555555;
+    --clr-gris-claro: #d9d9d9;
+    --clr-blanco: #fafaff;
+
+    --clr-celeste: #74acdf;
+    --clr-azul: #0038a8;
+    --clr-rojo: #ff6d90;
+    
+    --clr-uno: #E6E2DB;
+    --clr-dos: #FBF9F1;
+    --clr-tres: #ABD8DA;
+    --clr-cuatro: #93C8D0;
+
+    /* Tamaños para textos */
+    --txt-2xl: 3.25rem; /* 52px */
+    --txt-xl: 2rem; /* 32px */
+    --txt-lg: 1.75rem; /* 28px */
+    --txt-md: 1.375rem; /* 22px */
+    --txt-base: 1.125rem; /* 18px */
+    --txt-sm: 0.875rem; /* 14px */
+
+    /* Pesos de fuentes */
+    --wgh-bold: 700;
+    --wgh-semiBold: 600;
+    --wgh-medium: 500;
+    --wgh-regular: 400;
+    --wgh-ligth: 300;
+}
+
+
 .main {
     width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 
-.titulo {
-    margin-top: 30px;
-}
 
-.titulo a {
-    color: var(--clr-celeste);
-    float: right;
-    margin-top: -30px;
-}
-
-.seleccionarPais {
+.formularioCiudad {
     margin: 0 auto;
-    width: 600px;
-    margin-top: 50px;
-    font-size: 20px;
+    width: 400px;
+    text-align: right;
 }
 
-.paisOrigenResultado, .paisDestinoResultado {
-    text-align: left;
-    font-size: 15px;
-}
-
-.seleccionarFecha  {
-    font-size: 20px;
-    margin-top: 60px;
-}
-
-.seleccionarFecha input[type="datetime-local"] {
-    margin-top: 10px;
-    background-color: #bbb7b7;
+.formularioCiudad input {
+    margin-left: 50px;
+    margin-bottom: 70px;
     border: 0px;
-    text-align: center;
     border-radius: 5px;
     width: 200px;
-    height: 50px;
+    height: 20px;
 }
 
-.fechaConvertida {
-    font-size: 20px;
-    margin-top: 40px;
+
+.formularioCiudad input[type="time"] {
+    text-align: center;
 }
 
-.horaResultado {
+.botonConvertir button {
+    color: var(--clr-blanco);
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-right: 100px;
+    border: 0px;
+    border-radius: 7px;
+    background-color: rgb(55, 55, 255);
+}
+
+.resultado {
+    display: none;
+    text-align: center;
+    float: right;
     margin: 0 auto;
     margin-top: 10px;
-    background-color: var(--clr-celeste);
-    border: 0px;
-    text-align: center;
-    border-radius: 5px;
     width: 200px;
     height: 50px;
 }
 
 footer {
-    width: 90%;
-    margin: 0 auto;
+    color: var(--clr-azul); 
+    padding: 10px;
     text-align: center;
-    margin-top: 60px;
-    color: var(--clr-celeste);
-}
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 
-ul {
-    list-style-type: none;
 }
 
 a {
