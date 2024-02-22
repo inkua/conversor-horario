@@ -31,11 +31,11 @@
 
         <main>
             <!-- Inputs -->
-            <form class="inputs">
+            <form id="idInputs" class="inputs">
                 <section>
                     <div>
                         <label for="idTitle">Título:</label>
-                        <input id="idTitle" type="text" />
+                        <input required id="idTitle" type="text" />
                     </div>
                     <div>
                         <label for="idDescription">Descripción:</label>
@@ -43,17 +43,17 @@
                     </div>
                     <div>
                         <label for="idLink">Link a la reunión:</label>
-                        <input id="idLink" type="text" />
+                        <input required id="idLink" type="url" />
                     </div>
                 </section>
                 <section>
                     <div>
-                        <label for="idDate">Fecha y hora:</label>
+                        <label required for="idDate">Fecha y hora:</label>
                         <input id="idDate" type="datetime-local" />
                     </div>
                     <div>
                         <label for="idSelectOriginCity">Ciudad origen:</label>
-                        <select id="idSelectOriginCity">
+                        <select required id="idSelectOriginCity">
                             <option value="">Seleccione una ciudad</option>
                             <!-- 
                         Ejemplos:
@@ -64,7 +64,7 @@
                     </div>
                     <div>
                         <label for="idSelectDestCity">Ciudades a incluir:</label>
-                        <select id="idSelectDestCity">
+                        <select required id="idSelectDestCity">
                             <option value="">Seleccione las ciudades</option>
                         </select>
                         <ul class="inputs__selected_cities" id="idSelectedCities"></ul>
@@ -74,13 +74,19 @@
 
             <!-- Resultado -->
             <section class="output">
+                <button id="idBtnSubmit" type="button" class="submit">Generar reunión</button>
+                <div id="idOutputContent">
+                    <!--
+                Ejemplo:
                 <h2>Este es el título,</h2>
                 <p>y esta es la descripción</p>
+                <p>Link:</p>
                 <ul>
                     <li>Bogotá: Martes 15/02 - 23:00</li>
-                    <li>Martes 15/02 - 23:00</li>
-                    <li>Martes 15/02 - 23:00</li>
-                </ul>
+                    <li>Montevideo: Martes 15/02 - 23:00</li>
+                    <li>Buenos Aires: Martes 15/02 - 23:00</li>
+                </ul>-->
+                </div>
             </section>
         </main>
         <!-- Scripts -->

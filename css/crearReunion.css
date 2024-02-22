@@ -2,6 +2,10 @@ ul {
     list-style-type: none;
 }
 
+select {
+    cursor: pointer;
+}
+
 body {
     max-width: 60rem;
 }
@@ -12,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-block: 2rem;
+    margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -112,16 +116,52 @@ body {
     cursor: pointer;
 }
 
+.submit {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-family: rubik;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--clr-blanco);
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
 /* Resultado */
 .output {
+    border-radius: 8px;
+    margin-inline: 1.25rem;
     background-color: var(--clr-celeste);
     padding: 1.25rem;
     color: var(--clr-blanco);
     box-shadow: 0 2px 5px 1px var(--clr-shadows);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.output a {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.output button {
+    cursor: pointer;
+}
+
+.output img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .output h2 {
     font-size: var(--txt-xl);
+    margin-top: 1rem;
 }
 
 .output p {
@@ -129,6 +169,10 @@ body {
 }
 
 #idDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     text-align: center;
 }
 
