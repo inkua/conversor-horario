@@ -6,35 +6,7 @@ select {
     cursor: pointer;
 }
 
-body {
-    max-width: 60rem;
-}
 
-/* Header */
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.header h1 {
-    font-size: var(--txt-xl);
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: var(--wgh-bold);
-    color: var(--clr-dos);
-}
-
-.header img {
-    width: 6rem;
-}
-
-.header a {
-    color: var(--clr-dos);
-    font-weight: var(--wgh-medium);
-}
 
 /* Inputs */
 .inputs {
@@ -178,17 +150,6 @@ body {
 
 /* Media querys */
 @media (min-width: 45rem) {
-    .header {
-        flex-direction: row;
-    }
-
-    .header img {
-        width: 8rem;
-    }
-
-    .header h1 {
-        font-size: var(--txt-2xl);
-    }
 
     .inputs {
         justify-content: space-evenly;
