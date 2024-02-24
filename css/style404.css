@@ -2,17 +2,14 @@
 .main {
     max-width: 80%;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color:  var(--clr-blanco);
-
     border-radius: 25px;
-    height: 800px;
-    width: 60%;
-    
-    margin-top: 5%;
-    margin-right: 20%;
-    margin-bottom: 5%;
-    margin-left: 20%;
+    height: fit-content;
+    padding: 20px 20px 100px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    display: grid;
+    place-items: center;
 }
 
 a{
@@ -30,17 +27,22 @@ a{
 }
 
 .regresoButton{
+    display: inline-block;
     background-color: #007AFF;
     border-radius: 6px;
     color:var(--clr-blanco);
     font-size: 20px;
+    padding: 20px 30px;
+    max-width: 300px;
 }
 
 .messageError{
     color:var(--clr-gris-oscuro)
 }
 
-
+.contentError{
+    height: auto;
+}
 .contentError .imgNF{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -55,7 +57,7 @@ a{
     margin-bottom: 2%;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 601px) {
     body {
         margin: 0 auto;
         color: var(--clr-negro);
@@ -63,19 +65,13 @@ a{
     }
     
     .main {
-        max-width: 80%;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         background-color:  var(--clr-blanco);
     
-        border-radius: 25px;
-        height: 400px;
-        width: 60%;
-        
-        margin-top: 2%;
-        margin-right: 20%;
-        margin-bottom: 2%;
-        margin-left: 20%;
+        border-radius: 15px;
+        max-width: 300px;
+        padding-bottom: 30px;
     }
 
 
