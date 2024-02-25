@@ -27,36 +27,22 @@
         
 
         <main class="main">
-            
-            <div class="formularioCiudad">
-                <label for="">Ciudad de origen</label>
-                <input id="ciudadOrigen"  type="search" list="listaCiudades" required placeholder="🔎 Ciudad origen"> <br>
+            <form action="">
+                <label for="ciudadOrigen">Ciudad Origen:</label>
+                <input id="ciudadOrigen"  type="search" list="listaCiudades" required placeholder="🔎 Ciudad origen">
 
-                <label for="">Hora</label> 
-                <input id="horaLocal" type="time" required> <br>
+                <label for="">Hora:</label>
+                <input id="horaLocal" type="time" required>
 
-                <label for="">Ciudad de destino</label> 
-                <input id="ciudadDestino" type="search" list="listaCiudades" required placeholder="🔎 Ciudad destino"> 
-            
-                <div class="botonConvertir">
-                    <button onclick="mostrarHoraConvertida()">Convertir</button>
-                </div>
+                <label for="">Ciudad Destino:</label>
+                <input id="ciudadDestino" type="search" list="listaCiudades" required placeholder="🔎 Ciudad destino">
 
-                <div id="resultado" class="resultado">
-                
-                </div>
+                <button onclick="mostrarHoraConvertida()" id="botonConvertir">Convertir</button>
+            </form>
+            <div id="resultado" class="resultado">
                 
             </div>
-
-
         </main>
-
-        <footer>
-            <div class="footer">
-                <p>Diseñado y desarrollado por InkuA Team.</p>
-                <a href="./404.html">not found page</a>
-            </div>
-        </footer>
 
         <!-- Scripts -->
         <script src="./js/moment.js"></script>
@@ -65,10 +51,19 @@
 
         <!--Lista de ciudades-->
         <datalist id="listaCiudades">
-            <option value="Buenos Aires">        
-            <option value="Santiago de chile">          
-            <option value="Bogota">          
-            <option value="Caracas">
+            <option value="🇨🇴 Bogota"></option>
+            <option value="🇦🇷 Buenos Aires"></option>
+            <option value="🇦🇷 Cordoba"></option>
+            <option value="🇺🇾 Montevideo"></option>
+            <option value="🇨🇱 Santiago de Chile"></option>
+            <option value="🇵🇾 Asuncion"></option>
+            <option value="🇧🇴 La Paz"></option>
+            <option value="🇵🇪 Lima"></option>
+            <option value="🇪🇨 Guayaquil"></option>
+            <option value="🇵🇦 Panama"></option>
+            <option value="🇸🇻 El Salvador"></option>
+            <option value="🇵🇷 Puerto Rico"></option>
+            <option value="🇲🇽 Ciudad de Mexico"></option>
         </datalist>
     </body>
 </html>

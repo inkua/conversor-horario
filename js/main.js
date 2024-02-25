@@ -27,16 +27,19 @@ function convertirHora(hora, ciudadOrigen, ciudadDestino) {
 
   function obtenerZonaHoraria(ciudad) {
     const zonasHorarias = {
-      'Buenos Aires': 'America/Argentina/Buenos_Aires',
-      'La paz': 'America/La_Paz',
-      'Sao Paulo': 'America/Sao_Paulo',
-      'Chile': 'America/Santiago',
-      'Bogota': 'America/Bogota',
-      'Ecuador': 'America/Guayaquil',
-      'Paraguay': 'America/Asuncion',
-      'Peru': 'America/Lima',
-      'Uruguay': 'America/Montevideo',
-      'Venezuela': 'America/Caracas',
+      '🇨🇴 Bogota': 'America/Bogota',
+      '🇦🇷 Buenos Aires': 'America/Buenos_Aires',
+      '🇦🇷 Cordoba': 'America/Cordoba',
+      '🇺🇾 Montevideo': 'America/Montevideo',
+      '🇨🇱 Santiago de Chile': 'America/Santiago',
+      '🇵🇾 Asuncion': 'America/Asuncion',
+      '🇧🇴 La Paz': 'America/La_Paz',
+      '🇵🇪 Lima': 'America/Lima',
+      '🇪🇨 Guayaquil': 'America/Guayaquil',
+      '🇵🇦 Panama': 'America/Panama',
+      '🇸🇻 El Salvador': 'America/El_Salvador',
+      '🇵🇷 Puerto Rico': 'America/Puerto_Rico',
+      '🇲🇽 Ciudad de Mexico': 'America/Mexico_City'    
       // Se agregan ciudades segun se necesiten 
     };
 
