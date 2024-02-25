@@ -125,3 +125,55 @@ body {
     }
 }
 /* header style finish */
+
+.footer {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color:  #93C8D0;
+    color: #E6E2DB;
+  }
+  
+  .footer-about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer-txt {
+    text-align: center;
+    color: rgb(240, 240, 240);
+    margin: 1px;
+  }
+  
+  .autor-link {
+    color: rgb(55, 55, 255);
+    text-decoration: none;
+  }
+  
+  .autor-link:hover {
+    color: #E6E2DB;
+  }
+  
+  .ultimaActualizacion {
+    color: rgb(100, 100, 100);
+  }
+  
+  .githubLogo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    fill: rgb(240, 240, 240);
+  }
+  
+  .githubLogo:hover {
+    fill: #E6E2DB;
+  }
