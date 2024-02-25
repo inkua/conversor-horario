@@ -7,11 +7,9 @@ Además este proyecto nos permitio conocernos entre los integrantes del equipo, 
 
 ## Integrantes
 -[Faustino Harriague]( ).
--[Gonzalo Vega]( ).
 -[Johel Goñi](https://www.linkedin.com/in/jgoni/).
 -[Julian Alvarez](https://www.linkedin.com/in/julian-alvarez-713172246/).
 -[Manuel Florez]( ).
--[Melani Depetris]( ).
 -[Santiago Larrosa]( ).
 
 
