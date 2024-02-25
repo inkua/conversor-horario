@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aplicación web para convertir zonas horarias" />
+        <meta name="author" content="Inkua Team" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.02.min.css"
+        />
+        <link rel="stylesheet" href="../css/crearReunion.css" />
+        <title>Crear reunión</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <a href="../index.html">
+                <img
+                    src="../assets/img/logo.png"
+                    alt="Logo de la aplicacion, la tierra junto con un reloj de color blanco y azul."
+                />
+            </a>
+            <h1>Crear reunión</h1>
+            <nav>
+                <a href="../index.html">Conversor</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Inputs -->
+            <form id="idInputs" class="inputs">
+                <section>
+                    <div>
+                        <label for="idTitle">Título:</label>
+                        <input required id="idTitle" type="text" />
+                    </div>
+                    <div>
+                        <label for="idDescription">Descripción:</label>
+                        <textarea id="idDescription" rows="6"></textarea>
+                    </div>
+                    <div>
+                        <label for="idLink">Link a la reunión:</label>
+                        <input required id="idLink" type="url" />
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label required for="idDate">Fecha y hora:</label>
+                        <input id="idDate" type="datetime-local" />
+                    </div>
+                    <div>
+                        <label for="idSelectOriginCity">Ciudad origen:</label>
+                        <select required id="idSelectOriginCity">
+                            <option value="">Seleccione una ciudad</option>
+                            <!-- 
+                        Ejemplos:
+                        <option value="America/Bogota">Bogotá</option>
+                        <option value="America/Buenos_Aires">Buenos Aires</option>
+                        <option value="America/Montevideo">Montevideo</option> 
+                        --></select>
+                    </div>
+                    <div>
+                        <label for="idSelectDestCity">Ciudades a incluir:</label>
+                        <select required id="idSelectDestCity">
+                            <option value="">Seleccione las ciudades</option>
+                        </select>
+                        <ul class="inputs__selected_cities" id="idSelectedCities"></ul>
+                    </div>
+                </section>
+            </form>
+
+            <!-- Resultado -->
+            <section class="output">
+                <button id="idBtnSubmit" type="button" class="submit">Generar reunión</button>
+                <div id="idOutputContent">
+                    <!--
+                Ejemplo:
+                <h2>Este es el título,</h2>
+                <p>y esta es la descripción</p>
+                <p>Link:</p>
+                <ul>
+                    <li>Bogotá: Martes 15/02 - 23:00</li>
+                    <li>Montevideo: Martes 15/02 - 23:00</li>
+                    <li>Buenos Aires: Martes 15/02 - 23:00</li>
+                </ul>-->
+                </div>
+            </section>
+        </main>
+        <!-- Scripts -->
+        <script src="../js/moment.js"></script>
+        <script src="../js/moment-timezone.js"></script>
+        <!-- <script src="../js/main.js"></script> -->
+        <script src="../js/crear-reunion.js"></script>
+
+        <!-- select -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+        <script src="../js/select.js"></script> -->
+    </body>
+</html>

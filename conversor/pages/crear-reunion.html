@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Aplicación web para convertir zonas horarias"/>
+        <meta name="author" content="Inkua Team"/>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Crear reunión</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/logo.png" alt="logo"></img>
+                </a>
+
+                <a href="#"><h1 class="nav-first-title">Crear Reunión</h1></a>
+                <a href="../index.html">
+                    <span class="nav-second-title">conversor</span>
+                </a>
+                
+            </nav>
+        </header>
+        
+        <main class="main">
+        <div class="titulo"> 
+             <br>
+            <h1>Crear reunion</h1>
+            <a href="../index.html">Conversor</a>
+            </div>
+
+            <div class="formularioReunion">
+                <div class="informacionReunion">
+                    <label for="">Titulo:</label> <br>
+                    <input id="tituloReunion" type="text" required placeholder="Titulo de la reunion"> <br>
+
+                    <label for="">Descripción:</label> <br>
+                    <textarea id="descripcionReunion" placeholder="Descripción de la reunion" id="" cols="30" rows="10"></textarea> <br>
+
+                    <label for="">Link a la reunion:</label> <br>
+                    <input id="linkReunion" type="url" required placeholder="Link a la reunion">
+                </div>
+                <div class="datosReunion">
+                    <label for="">Fecha y hora:</label> <br>
+                    <input id="fechaReunion" type="datetime-local" required> <br>
+
+                    <label for="">Ciudad origen:</label> <br>
+                    <select name="paisOrigen" id="paisOrigen">
+                        <option value="Argentina">Argentina </option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brazil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select> <br>
+
+                    <label for="">Ciudad a incluir:</label> <br>
+                    <select name="paisDestino" id="paisDestino">
+                        <option value="Argentina">Argentina </option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brazil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+
+                    <div class="paisesSeleccionados"></div>
+                </div>
+            </div>
+
+            <div class="invitacionReunion">
+                <div class="tituloInvitacion"></div>
+                <div class="descripcionInvitacion"></div>
+                <div class="paisesInvitacion"></div>
+            </div>
+        </main>
+        <!-- Scripts -->
+        <script src="../js/moment.js"></script>
+        <script src="../js/moment-timezone.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
