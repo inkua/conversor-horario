@@ -6,17 +6,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Aplicación web para convertir zonas horarias"/>
         <meta name="author" content="Inkua Team"/>
+
+        <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/style.css" />
         <title>Conversor horario</title>
     </head>
 
     <body>
-        <h1>Conversor</h1>
-        <a href="./pages/crear-reunion.html">Crear reunión</a>
+        <header class="header">
+            <a href="#">
+                <img class="logo" src="./assets/img/logo.png" alt="logo"></img>
+            </a>
+            <h1>Conversor</h1>
+            <nav>
+                <a href="./pages/crear-reunion.html">
+                    Crear reunion
+                </a>
+            </nav>
+        </header>
+        
+
+        <main class="main">
+            <form action="">
+                <label for="ciudadOrigen">Ciudad Origen:</label>
+                <input id="ciudadOrigen"  type="search" list="listaCiudades" required placeholder="🔎 Ciudad origen">
+
+                <label for="">Hora:</label>
+                <input id="horaLocal" type="time" required>
+
+                <label for="">Ciudad Destino:</label>
+                <input id="ciudadDestino" type="search" list="listaCiudades" required placeholder="🔎 Ciudad destino">
+
+                <button onclick="mostrarHoraConvertida()" id="botonConvertir">Convertir</button>
+            </form>
+            <div id="resultado" class="resultado">
+                
+            </div>
+        </main>
 
         <!-- Scripts -->
         <script src="./js/moment.js"></script>
         <script src="./js/moment-timezone.js"></script>
         <script src="./js/main.js"></script>
+
+        <!--Lista de ciudades-->
+        <datalist id="listaCiudades">
+            <option value="🇨🇴 Bogota"></option>
+            <option value="🇦🇷 Buenos Aires"></option>
+            <option value="🇦🇷 Cordoba"></option>
+            <option value="🇺🇾 Montevideo"></option>
+            <option value="🇨🇱 Santiago de Chile"></option>
+            <option value="🇵🇾 Asuncion"></option>
+            <option value="🇧🇴 La Paz"></option>
+            <option value="🇵🇪 Lima"></option>
+            <option value="🇪🇨 Guayaquil"></option>
+            <option value="🇵🇦 Panama"></option>
+            <option value="🇸🇻 El Salvador"></option>
+            <option value="🇵🇷 Puerto Rico"></option>
+            <option value="🇲🇽 Ciudad de Mexico"></option>
+        </datalist>
     </body>
 </html>

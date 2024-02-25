@@ -1,0 +1,123 @@
+
+:root {
+    /* Colores */
+    --clr-negro: #070417;
+    --clr-gris-oscuro: #555555;
+    --clr-gris-claro: #d9d9d9;
+    --clr-blanco: #fafaff;
+
+    --clr-celeste: #74acdf;
+    --clr-azul: #0038a8;
+    --clr-rojo: #ff6d90;
+    
+    --clr-uno: #E6E2DB;
+    --clr-dos: #FBF9F1;
+    --clr-tres: #ABD8DA;
+    --clr-cuatro: #93C8D0;
+
+    /* Tamaños para textos */
+    --txt-2xl: 3.25rem; /* 52px */
+    --txt-xl: 2rem; /* 32px */
+    --txt-lg: 1.75rem; /* 28px */
+    --txt-md: 1.375rem; /* 22px */
+    --txt-base: 1.125rem; /* 18px */
+    --txt-sm: 0.875rem; /* 14px */
+
+    /* Pesos de fuentes */
+    --wgh-bold: 700;
+    --wgh-semiBold: 600;
+    --wgh-medium: 500;
+    --wgh-regular: 400;
+    --wgh-ligth: 300;
+}
+
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.formularioCiudad {
+    margin: 0 auto;
+    width: 400px;
+    text-align: right;
+}
+
+.formularioCiudad input {
+    margin-left: 50px;
+    margin-bottom: 70px;
+    border: 0px;
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+
+.formularioCiudad input[type="datetime-local"] {
+    text-align: center;
+}
+
+footer {
+    color: var(--clr-azul); /* Puedes personalizar el color del texto según tus necesidades */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: var(--wgh-bold);
+    font-size: var(--txt-lg);
+}
+
+h2 {
+    font-weight: var(--wgh-medium);
+    font-size: var(--txt-md);
+}
+
+/* Media querys */
+@media (min-width: 45rem) {
+    h1 {
+        font-size: var(--txt-2xl);
+    }
+
+    h2 {
+        font-size: var(--txt-xl);
+    }
+}
+
+/* Hasta aca el style del index.html */
+
+/* Aca comienza el css de crear-reunion.html */
+
+.formularioReunion {
+    display: flex;
+    margin: 0 auto;
+    font-weight:  var(--wgh-bold);
+    width: 40%;
+}
+
+.informacionReunion {
+   width: 50%;
+}
+
+.informacionReunion  input, .informacionReunion  textarea{
+    margin-bottom: 20px;
+}
+
+.datosReunion {
+   width: 50%;
+}
+.formularioReunion input[type="text"], .formularioReunion textarea {
+    width: 200px;
+}
+
