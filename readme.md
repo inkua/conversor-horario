@@ -6,17 +6,15 @@ De ahí surge este proyecto para poder comunicar eficazmente el horario exacto e
 Además este proyecto nos permitio conocernos entre los integrantes del equipo, y comenzar a trabajar de manera colaborativa.
 
 ## Integrantes
--[Faustino Harriague]( ).
+-[Faustino Harriague](https://uy.linkedin.com/in/faustino-harriague-26532299).
 
 -[Johel Goñi](https://www.linkedin.com/in/jgoni/).
 
 -[Julian Alvarez](https://www.linkedin.com/in/julian-alvarez-713172246/).
 
--[Manuel Florez]( ).
+-[Manuel Florez](https://www.linkedin.com/in/manuel14mds/).
 
--[Santiago Larrosa]( ).
-
-
+-[Santiago Larrosa](https://www.linkedin.com/in/santiago-larrosa-bauzá-99b740251/).
 
 
 ## Tecnologias a utilizar
@@ -32,24 +30,3 @@ Además este proyecto nos permitio conocernos entre los integrantes del equipo, 
 
 ## repositorio para el desarrollo de la web conversor-horario
 - Repositorio del proyecto: https://github.com/inkua/conversor-horario
-
----------------------------------------------------------------------------
-## Tareas por completar:
-### 1. crear archivo readme del repositorio del proyecto:
-> a. Poner el nombre de los integrantes.
-> b. Añadir las tecnologías, herramientas y librería.
-> c. Agregar el link del diseño figma. 
-
-### 2.Crear el scaffolding(estructura) del proyecto(archivos index.html/css, 404.html) estructura de carpetas.
-
-### 3. Maquetar el formulario 100% responsive que está en el Figma.
-
-### 4. Maquetar la tarjeta de salida de información. Es el resultado de la conversion.
-
-### 5. crear un modal/dialog con botón oculto para mostar los participantes y el trabajo que hicieron.(EasterEgg) - Se deja la creatividad del diseño a quien tome la tarea.
-
-### 6. Crear pagina 404.html - diseño a concideración de quien tome la tarea.
-
-### 7. Integración de la librería/conversión horaria.
-
-### 8. Review de la página para su deploy.

@@ -135,6 +135,19 @@ body {
     height: 70px;
     background-color:  #93C8D0;
     color: #E6E2DB;
+    max-width: 1280px;
+  }
+
+  .footer2 {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color:  #93C8D0;
+    color: #E6E2DB;
+    max-width: 1280px;
   }
   
   .footer-about {
