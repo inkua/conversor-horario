@@ -21,7 +21,6 @@ function convertirHora(hora, ciudadOrigen, ciudadDestino) {
     fechaOrigen.minutes(horaMoment.minutes());
   
     const horaDestino = fechaOrigen.clone().tz(obtenerZonaHoraria(ciudadDestino)).format('hh:mm A');
-  
     return horaDestino;
     }
 
