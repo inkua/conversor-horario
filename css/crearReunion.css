@@ -6,8 +6,6 @@ select {
     cursor: pointer;
 }
 
-
-
 /* Inputs */
 .inputs {
     display: flex;
@@ -150,7 +148,6 @@ select {
 
 /* Media querys */
 @media (min-width: 45rem) {
-
     .inputs {
         justify-content: space-evenly;
         flex-direction: row;
