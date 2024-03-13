@@ -55,12 +55,7 @@
                         <label for="idSelectOriginCity">Ciudad origen:</label>
                         <select required id="idSelectOriginCity">
                             <option value="">Seleccione una ciudad</option>
-                            <!-- 
-                        Ejemplos:
-                        <option value="America/Bogota">Bogotá</option>
-                        <option value="America/Buenos_Aires">Buenos Aires</option>
-                        <option value="America/Montevideo">Montevideo</option> 
-                        --></select>
+                        </select>
                     </div>
                     <div>
                         <label for="idSelectDestCity">Ciudades a incluir:</label>
@@ -76,17 +71,34 @@
             <section class="output">
                 <button id="idBtnSubmit" type="button" class="submit">Generar reunión</button>
                 <div id="idOutputContent">
-                    <!--
-                Ejemplo:
-                <h2>Este es el título,</h2>
-                <p>y esta es la descripción</p>
-                <p>Link:</p>
-                <ul>
-                    <li>Bogotá: Martes 15/02 - 23:00</li>
-                    <li>Montevideo: Martes 15/02 - 23:00</li>
-                    <li>Buenos Aires: Martes 15/02 - 23:00</li>
-                </ul>-->
                 </div>
+            </section>
+
+            <section class="contenedor-carrusel">
+                <div class="carrusel">
+                    <ul class="fila fila-derecha">
+                        <li class="city"><span class="cityName">Cd de Mexico</span><img src="../assets/img/flags/flag-mexico.svg" alt="Mexico Flag"></li>
+                        <li class="city"><span class="cityName">Panamá</span><img src="../assets/img/flags/flag-panama.svg" alt="Panamá Flag"></li>
+                        <li class="city"><span class="cityName">Caracas</span><img src="../assets/img/flags/flag-venezuela.svg" alt="Venezuela Flag"></li>
+                        <li class="city"><span class="cityName">New York</span><img src="../assets/img/flags/flag-usa.svg" alt="USA Flag"></li>
+                        <li class="city"><span class="cityName">Santiago</span><img src="../assets/img/flags/flag-chile.svg" alt="Chile Flag"></li>
+                        <li class="city"><span class="cityName">Buenos Aires</span><img src="../assets/img/flags/flag-argentina.svg" alt="Argentina Flag"></li>
+                        <li class="city"><span class="cityName">Berlin</span><img src="../assets/img/flags/flag-germany.svg" alt="Alemania Flag"></li>
+                        
+                    </ul>
+                    <ul class="fila fila-izquierda">
+                        <li class="city"><span class="cityName">La Paz</span><img src="../assets/img/flags/flag-bolivia.svg" alt="Bolivia Flag"></li>
+                        <li class="city"><span class="cityName">Bogota</span><img src="../assets/img/flags/flag-colombia.svg" alt="Colombia Flag"></li>
+                        <li class="city"><span class="cityName">Madrid</span><img src="../assets/img/flags/flag-spain.svg" alt="España Flag"></li>
+                        <li class="city"><span class="cityName">Quito</span><img src="../assets/img/flags/flag-ecuador.svg" alt="Ecuador Flag"></li>
+                        <li class="city"><span class="cityName">Montevideo</span><img src="../assets/img/flags/flag-uruguay.svg" alt="Uruguay Flag"></li>
+                        <li class="city"><span class="cityName">Lima</span><img src="../assets/img/flags/flag-peru.svg" alt="Peru Flag"></li>
+                        <li class="city"><span class="cityName">Asuncion</span><img src="../assets/img/flags/flag-paraguay.svg" alt="Paraguay Flag"></li>
+                        
+                    </ul>
+                </div>
+                <div class="sombra sombra-izquierda"></div>
+                <div class="sombra sombra-derecha"></div>
             </section>
         </main>
 
@@ -96,19 +108,14 @@
                     <a class="autor-link" href="./easterEgg.html" rel="noopener noreferrer">InkuA Team.</a>
                 </span>
                 <span class="footer-txt ultimaActualizacion">Febrero 2024</span>
+                <span>version 1.0</span>
             </div>
-        
-
-
         </footer>
         <!-- Scripts -->
+        <script src="../js/carrusel.js"></script>
         <script src="../js/moment.js"></script>
         <script src="../js/moment-timezone.js"></script>
-        <!-- <script src="../js/main.js"></script> -->
         <script src="../js/crear-reunion.js"></script>
 
-        <!-- select -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
-        <script src="../js/select.js"></script> -->
     </body>
 </html>
