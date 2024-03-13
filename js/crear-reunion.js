@@ -8,14 +8,9 @@ const ciudades = [
         codigo: "America/Buenos_Aires",
     },
     {
-        nombre: "Cordoba",
-        codigo: "America/Cordoba",
-    },
-    {
         nombre: "Montevideo",
         codigo: "America/Montevideo",
     },
-
     {
         nombre: "Santiago de Chile",
         codigo: "America/Santiago",
@@ -33,24 +28,32 @@ const ciudades = [
         codigo: "America/Lima",
     },
     {
-        nombre: "Guayaquil",
-        codigo: "America/Guayaquil",
-    },
-    {
         nombre: "Panama",
         codigo: "America/Panama",
     },
     {
-        nombre: "El Salvador",
-        codigo: "America/El_Salvador",
-    },
-    {
-        nombre: "Puerto Rico",
-        codigo: "America/Puerto_Rico",
-    },
-    {
         nombre: "Ciudad de Mexico",
         codigo: "America/Mexico_City",
+    },
+    {
+        nombre: "Madrid",
+        codigo: "Europe/Madrid",
+    },
+    {
+        nombre: "Berlin",
+        codigo: "Europe/Berlin",
+    },
+    {
+        nombre: "Caracas",
+        codigo: "America/Caracas",
+    },
+    {
+        nombre: "Quito",
+        codigo: "Etc/GMT-5",
+    },
+    {
+        nombre: "New York",
+        codigo: "America/New_York",
     },
 ];
 ciudades.sort((a, b) => a.nombre.localeCompare(b.nombre));

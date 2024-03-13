@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 not found</title>
+    <title>Not found</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="css/style404.css">
+    <style>
+        .main {
+            max-width: 80%;
+            text-align: center;
+            background-color: var(--clr-blanco);
+            border-radius: 25px;
+            height: fit-content;
+            padding: 20px 20px 100px 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            display: grid;
+            place-items: center;
+        }
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+        .error404 {
+            color: var(--clr-rojo);
+        }
+        .noEncontrada {
+            color: var(--clr-negro);
+            font-size: var(--txt-xl);
+            font-weight: var(--wgh-semiBold);
+            margin-top: 100px;
+        }
+        .regresoButton {
+            display: inline-block;
+            background-color: #007AFF;
+            border-radius: 6px;
+            color: var(--clr-blanco);
+            font-size: 20px;
+            padding: 20px 30px;
+            max-width: 300px;
+        }
+        .messageError {
+            color: var(--clr-gris-oscuro)
+        }
+        .contentError {
+            height: auto;
+        }
+        .contentError .imgNF {
+            margin-top: 10%;
+            margin-bottom: 10%;
+            max-width: 75%;
+            max-height: 75%
+        }
+        .contentError p {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        @media only screen and (max-width: 601px) {
+            body {
+                margin: 0 auto;
+                color: var(--clr-negro);
+            }
+            .main {
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: var(--clr-blanco);
+
+                border-radius: 15px;
+                max-width: 300px;
+                padding-bottom: 30px;
+            }
+            .noEncontrada {
+                color: var(--clr-negro);
+                font-size: var(--txt-base);
+                font-weight: var(--wgh-semiBold);
+            }
+            .messageError {
+                color: var(--clr-gris-oscuro)
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -23,7 +98,7 @@
 
     <main class="main">
         <div class="contentError">
-            <p><img class="imgNF" src="./assets/img/NotFound2.png" alt="404 image"></p>
+            <p><img class="imgNF" src="./assets/img/NF.png" alt="not found image"></p>
             <p class="error404"><span>&#9888;</span> 404 </p> 
             <p class="noEncontrada">Pagina no Encontrada</p> 
             <p class="messageError">La página que estás buscando no existe o ha sido removida. Sigue explorando nuestro sitio</p> 

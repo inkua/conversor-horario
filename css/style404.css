@@ -1,8 +1,7 @@
-
 .main {
     max-width: 80%;
     text-align: center;
-    background-color:  var(--clr-blanco);
+    background-color: var(--clr-blanco);
     border-radius: 25px;
     height: fit-content;
     padding: 20px 20px 100px 20px;
@@ -11,48 +10,41 @@
     display: grid;
     place-items: center;
 }
-
-a{
+a {
     text-decoration: none;
     text-align: center;
 }
-.error404{
+.error404 {
     color: var(--clr-rojo);
 }
-.noEncontrada{
-    color:var(--clr-negro);
+.noEncontrada {
+    color: var(--clr-negro);
     font-size: var(--txt-xl);
     font-weight: var(--wgh-semiBold);
     margin-top: 100px;
 }
-
-.regresoButton{
+.regresoButton {
     display: inline-block;
     background-color: #007AFF;
     border-radius: 6px;
-    color:var(--clr-blanco);
+    color: var(--clr-blanco);
     font-size: 20px;
     padding: 20px 30px;
     max-width: 300px;
 }
-
-.messageError{
-    color:var(--clr-gris-oscuro)
+.messageError {
+    color: var(--clr-gris-oscuro)
 }
-
-.contentError{
+.contentError {
     height: auto;
 }
-.contentError .imgNF{
+.contentError .imgNF {
     margin-top: 10%;
     margin-bottom: 10%;
     max-width: 75%;
     max-height: 75%
 }
-
-
-        
-.contentError p{
+.contentError p {
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -61,30 +53,22 @@ a{
     body {
         margin: 0 auto;
         color: var(--clr-negro);
-        
     }
-    
     .main {
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color:  var(--clr-blanco);
-    
+        background-color: var(--clr-blanco);
+
         border-radius: 15px;
         max-width: 300px;
         padding-bottom: 30px;
     }
-
-
-  
-    .noEncontrada{
-        color:var(--clr-negro);
+    .noEncontrada {
+        color: var(--clr-negro);
         font-size: var(--txt-base);
         font-weight: var(--wgh-semiBold);
-        
     }
-    
-    .messageError{
-        color:var(--clr-gris-oscuro)
+    .messageError {
+        color: var(--clr-gris-oscuro)
     }
-    
 }
