@@ -190,3 +190,130 @@ body {
   .githubLogo:hover {
     fill: #E6E2DB;
   }
+@font-face {
+    font-family: 'rubik';
+    src: url('../assets/fonts/Rubik-VariableFont_wght.ttf');
+    font-weight: 300 400 500 600 700;
+}
+
+:root {
+    /* Colores */
+    --clr-negro: #070417;
+    --clr-negro-difuminado: #070417b4;
+    --clr-shadows: #07041714;
+    --clr-gris-oscuro: #555555;
+    --clr-gris-claro: #d9d9d9;
+    --clr-blanco: #fafaff;
+
+    --clr-celeste: #74acdf;
+    --clr-azul: #0038a8;
+    --clr-rojo: #ff6d90;
+
+    --clr-uno: #e6e2db;
+    --clr-dos: #fbf9f1;
+    --clr-tres: #abd8da;
+    --clr-cuatro: #93c8d0;
+
+    /* Tamaños para textos */
+    --txt-2xl: 3.25rem; /* 52px */
+    --txt-xl: 2rem; /* 32px */
+    --txt-lg: 1.75rem; /* 28px */
+    --txt-md: 1.375rem; /* 22px */
+    --txt-base: 1.125rem; /* 18px */
+    --txt-sm: 0.875rem; /* 14px */
+
+    /* Pesos de fuentes */
+    --wgh-bold: 700;
+    --wgh-semiBold: 600;
+    --wgh-medium: 500;
+    --wgh-regular: 400;
+    --wgh-ligth: 300;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: rubik;
+    background-color: var(--clr-cuatro);
+    color: var(--clr-negro);
+}
+
+body {
+    max-width: 60rem;
+}
+
+
+/* header style start */
+
+.logo {
+    aspect-ratio: 1/1;
+    width: 60px;
+}
+.nav-first-title {
+    font-size: 1rem;
+}
+.nav-second-title {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: var(--txt-xl);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: var(--wgh-bold);
+    color: var(--clr-dos);
+}
+
+.header img {
+    width: 6rem;
+}
+
+.header a {
+    color: var(--clr-dos);
+    font-weight: var(--wgh-medium);
+}
+
+@media (min-width: 601px) {
+    body {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    nav {
+        margin: 20px 40px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .nav-first-title {
+        font-size: 1.6rem;
+    }
+    .nav-second-title {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .header {
+        flex-direction: row;
+    }
+
+    .header img {
+        width: 8rem;
+    }
+
+    .header h1 {
+        font-size: var(--txt-2xl);
+    }
+}
+/* header style finish */
