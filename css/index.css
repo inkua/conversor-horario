@@ -284,9 +284,8 @@ li span {
     margin-right: 10px;
 }
 
-img {
+.flagImg {
     width: 30px;
-    /* Ajusta según el tamaño deseado */
     height: auto;
 }
 
@@ -302,7 +301,6 @@ img {
         top: 0;
         bottom: 0;
         width: 100px;
-        /* Ajusta la anchura del difuminado a tus necesidades */
         z-index: 2;
     }
 
